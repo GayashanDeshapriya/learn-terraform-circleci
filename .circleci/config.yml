@@ -12,7 +12,7 @@ jobs:
           command: |
             terraform init -input=false
             terraform plan -out tfapply -var-file terraform.tfvars
-      - persist_to_workspace:
+      - persist_to_workspace: 
           root: .
           paths:
             - .
